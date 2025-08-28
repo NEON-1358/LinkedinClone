@@ -218,6 +218,11 @@ body {
     gap: 8px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
 .nav-item {
     display: flex;
     flex-direction: column;
@@ -247,6 +252,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    margin-left: auto;
 }
 
 /* Main Layout */
