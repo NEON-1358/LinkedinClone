@@ -283,7 +283,15 @@ body {
     text-align: center;
 }
 
-.profile-avatar, .profile-avatar-large, .post-avatar, .composer-avatar, 
+.profile-avatar{
+    content: url(../Images/download.jpeg);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: -32px auto 12px;
+    border: 2px solid white;
+}
+.profile-avatar-large , .post-avatar, .composer-avatar, 
 .suggestion-avatar, .suggested-avatar, .invitation-avatar, .exp-logo, .edu-logo {
     width: 64px;
     height: 64px;
