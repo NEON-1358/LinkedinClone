@@ -18,33 +18,23 @@ body {
 }
 
 .login-header {
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .logo {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0 20px;
 }
 
 .linkedin-logo {
     background-color: #0a66c2;
     color: white;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: bold;
-    padding: 8px 12px;
+    padding: 4px 10px;
     border-radius: 4px;
-}
-
-.linkedin-logo-small {
-    background-color: #0a66c2;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 4px 6px;
-    border-radius: 2px;
-    margin-right: 8px;
 }
 
 .login-form-container {
