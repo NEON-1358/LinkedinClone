@@ -366,7 +366,7 @@ body {
 .profile-avatar-large , .post-avatar-1, .post-avatar-2, .composer-avatar, 
 .suggested-avatar-1, .suggested-avatar-2, .suggested-avatar-3,
 .suggestion-avatar-1, .suggestion-avatar-5, .suggestion-avatar-6, .suggestion-avatar-7, 
-.suggestion-avatar-8, .suggestion-avatar-9,  .invitation-avatar-1, .exp-logo, .edu-logo {
+.suggestion-avatar-8, .suggestion-avatar-9,  .invitation-avatar-1, .invitation-avatar-2, .exp-logo, .edu-logo {  
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -389,32 +389,68 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-image: url("../Images/download.png");
+  background-image: url("../Images/images\ \(1\).jpeg");
   background-size: cover;
   background-position: center;
-  flex-shrink: 0;          /* prevents avatar from shrinking */
+  flex-shrink: 0;      
 }
 
+.suggestion-avatar-2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url("../Images/download\ \(3\).png");
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;      
+}
+
+.suggestion-avatar-3 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url("../Images/download\ \(2\).png");
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;      
+}
+
+.suggestion-avatar-4 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url("../Images/download\ \(1\).jpeg");
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;      
+}
 
 .suggestion-avatar-5 {
-    content: url(../Images/download\ \(2\).png);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url("../Images/download\ \(2\).jpeg");
+  background-size: cover;
+  flex-shrink: 0;
+  background-position: center;
+  flex-shrink: 0;    
+  margin-top: 5px;  
 }
 
 .suggestion-avatar-6 {
-    content: url(../Images/download\ \(2\).png);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url("../Images/download\ \(3\).jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 5px;  
+  flex-shrink: 0;
+  flex-shrink: 0;      
 }
 
-.suggestion-avatar-7 {
-    content: url(../Images/download\ \(2\).png);
-}
 
-.suggestion-avatar-8 {
-    content: url(../Images/download\ \(2\).png);
-}
 
-.suggestion-avatar-9 {
-    content: url(../Images/download\ \(2\).png);
-}
 
 .suggestion-info h3 {
   margin: 0;
@@ -427,8 +463,12 @@ body {
   color: #555;
 }
 
-.invitation-avatar {
-    content: url(../Images/download\ \(2\).png);
+.invitation-avatar-1 {
+    content: url(../Images/girly.webp);
+}
+
+.invitation-avatar-2 {
+    content: url(../Images/images\ \(2\).jpeg);
 }
 .edu-logo{
     content: url(../Images/Chitkara.jpeg);
@@ -447,7 +487,7 @@ body {
     margin: 0;
 }
 
-.suggestion-avatar-1, .suggestion-avatar-2, .invitation-avatar {
+.suggestion-avatar-1, .suggestion-avatar-2, .invitation-avatar-1, .invitation-avatar-2 {
     width: 56px;
     height: 56px;
     margin: 0;
