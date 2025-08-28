@@ -83,7 +83,15 @@ body {
     border-color: #0a66c2;
     border-width: 2px;
 }
+.accept {
+  background-color: #0a66c2;
+  color: white;
+}
 
+.reject {
+  background-color: #e0e0e0;
+  color: #333;
+}
 .btn-primary {
     width: 30%;
     background-color: #0a66c2;
@@ -300,7 +308,9 @@ body {
     border: 2px solid white;
 }
 .profile-avatar-large , .post-avatar-1, .post-avatar-2, .composer-avatar, 
-.suggested-avatar-1, .suggested-avatar-2, .suggested-avatar-3, .invitation-avatar, .exp-logo, .edu-logo {
+.suggested-avatar-1, .suggested-avatar-2, .suggested-avatar-3,
+.suggestion-avatar-1, .suggestion-avatar-5, .suggestion-avatar-6, .suggestion-avatar-7, 
+.suggestion-avatar-8, .suggestion-avatar-9,  .invitation-avatar-1, .exp-logo, .edu-logo {
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -316,9 +326,54 @@ body {
 }
 
 .suggested-avatar-3 {
+    content: url(../Images/download\ \(2\).jpeg);
+}
+
+.suggestion-avatar-1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url("../Images/download.png");
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;          /* prevents avatar from shrinking */
+}
+
+
+.suggestion-avatar-5 {
     content: url(../Images/download\ \(2\).png);
 }
 
+.suggestion-avatar-6 {
+    content: url(../Images/download\ \(2\).png);
+}
+
+.suggestion-avatar-7 {
+    content: url(../Images/download\ \(2\).png);
+}
+
+.suggestion-avatar-8 {
+    content: url(../Images/download\ \(2\).png);
+}
+
+.suggestion-avatar-9 {
+    content: url(../Images/download\ \(2\).png);
+}
+
+.suggestion-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.suggestion-info p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.invitation-avatar {
+    content: url(../Images/download\ \(2\).png);
+}
 .edu-logo{
     content: url(../Images/Chitkara.jpeg);
 }
@@ -336,7 +391,7 @@ body {
     margin: 0;
 }
 
-.suggestion-avatar-1, .suggested-avatar-2, .invitation-avatar {
+.suggestion-avatar-1, .suggestion-avatar-2, .invitation-avatar {
     width: 56px;
     height: 56px;
     margin: 0;
@@ -775,10 +830,12 @@ body {
 }
 
 .suggestion-card {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
+  display: flex;
+  align-items: center;     /* vertical center */
+  padding: 10px;
+  gap: 12px;               /* space between avatar and text */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
 }
 
 .suggestion-card h3 {
@@ -799,9 +856,23 @@ body {
 }
 
 .suggestion-actions {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
+  display: flex;
+  gap: 10px;       
+  margin-top: 10px;
+}
+
+.suggestion-actions button {
+  width: 40px;           
+  height: 40px;
+  border-radius: 50%;     
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;         
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
 }
 
 .invitations-section h3 {
