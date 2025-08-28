@@ -93,7 +93,7 @@ body {
   color: #333;
 }
 .btn-primary {
-    width: 30%;
+    width: 50%;
     background-color: #0a66c2;
     color: white;
     border: none;
@@ -140,6 +140,62 @@ body {
 .btn-outline:hover {
     background-color: #e7f3ff;
 }
+
+.icon svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.icon2 svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.share svg {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.icon3 svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.icon4 svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.cam svg{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.vid svg{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.art svg{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.pfp{
+    content: url(../Images/download.jpeg);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 
 .divider {
     margin: 24px 0;
@@ -484,7 +540,7 @@ body {
 
 .composer-actions {
     display: flex;
-    gap: 16px;
+    gap: 60px;
 }
 
 .composer-btn {
@@ -887,6 +943,8 @@ body {
     padding: 16px 0;
     border-bottom: 1px solid #e0e0e0;
 }
+
+
 
 .invitation-info {
     flex: 1;
