@@ -180,23 +180,80 @@ class App {
     }
 
     static generateSampleData() {
-        // This could be used to generate more dynamic content
+        // Enhanced sample data for posts with different types
         const samplePosts = [
             {
-                author: "Alex Johnson",
-                title: "Senior Developer at InnovTech",
-                time: "3h",
-                content: "Just finished implementing a new microservices architecture. Excited about the performance improvements! 🚀",
-                reactions: 42,
-                comments: 12
+                id: 1,
+                author: "John Doe",
+                title: "AI Engineer at Barclays",
+                time: "2 days ago",
+                type: "post",
+                content: "Just completed an amazing project using React and Node.js! The learning curve was steep but totally worth it. 🚀\n\nKey learnings:\n• Component optimization is crucial\n• State management makes all the difference\n• Testing saves time in the long run",
+                reactions: 45,
+                comments: 12,
+                shares: 3,
+                hasImage: false
             },
             {
-                author: "Sarah Williams",
-                title: "UX Designer at CreativeCorp",
-                time: "6h",
-                content: "Design thinking workshop was incredible today. Love collaborating with such talented teams!",
-                reactions: 28,
-                comments: 7
+                id: 2,
+                author: "John Doe",
+                title: "AI Engineer at Barclays",
+                time: "1 week ago",
+                type: "article",
+                content: "Published my thoughts on the future of AI in financial services. The integration of machine learning models in trading algorithms is fascinating!",
+                reactions: 128,
+                comments: 24,
+                shares: 18,
+                hasImage: false
+            },
+            {
+                id: 3,
+                author: "John Doe",
+                title: "AI Engineer at Barclays",
+                time: "2 weeks ago",
+                type: "image",
+                content: "Team outing after completing our Q4 goals! Amazing work everyone! 🎉",
+                reactions: 67,
+                comments: 15,
+                shares: 5,
+                hasImage: true,
+                imageUrl: "../Images/Screenshot 2024-12-06 124841.png"
+            },
+            {
+                id: 4,
+                author: "John Doe",
+                title: "AI Engineer at Barclays",
+                time: "3 weeks ago",
+                type: "post",
+                content: "Excited to share that I've completed my Deep Learning certification! The journey has been incredible, and I'm grateful for all the support from my colleagues at Morgan Stanley during my internship.",
+                reactions: 89,
+                comments: 21,
+                shares: 8,
+                hasImage: false
+            },
+            {
+                id: 5,
+                author: "John Doe",
+                title: "AI Engineer at Barclays",
+                time: "1 month ago",
+                type: "video",
+                content: "Demo of our latest AI workflow automation tool. This could revolutionize how we handle data processing!",
+                reactions: 156,
+                comments: 34,
+                shares: 42,
+                hasImage: false
+            },
+            {
+                id: 6,
+                author: "John Doe",
+                title: "AI Engineer at Barclays",
+                time: "1 month ago",
+                type: "post",
+                content: "Grateful to be part of such an innovative team. Working on cutting-edge AI solutions that will impact millions of users worldwide. #Innovation #AI #TeamWork",
+                reactions: 73,
+                comments: 18,
+                shares: 12,
+                hasImage: false
             }
         ];
 
@@ -250,6 +307,7 @@ class App {
 document.addEventListener('DOMContentLoaded', function() {
     App.init();
     App.addInteractiveFeatures();
+    PostsManager.init();
     
     // Add some dynamic content updates
     setTimeout(() => {
