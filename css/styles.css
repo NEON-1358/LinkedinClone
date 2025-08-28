@@ -85,7 +85,7 @@ body {
 }
 
 .btn-primary {
-    width: 100%;
+    width: 30%;
     background-color: #0a66c2;
     color: white;
     border: none;
@@ -295,16 +295,19 @@ body {
 .suggestion-avatar, .suggested-avatar, .invitation-avatar, .exp-logo, .edu-logo {
     width: 64px;
     height: 64px;
-    background: linear-gradient(135deg, #0a66c2, #004182);
     border-radius: 50%;
     margin: -32px auto 12px;
     border: 2px solid white;
 }
 
+.edu-logo{
+    content: url(../Images/Chitkara.jpeg);
+}
 .profile-avatar-large {
     width: 152px;
     height: 152px;
-    margin: -76px auto 16px;
+    margin: -76px  auto 16px;
+    content: url(../Images/download.jpeg);
 }
 
 .post-avatar, .composer-avatar {
@@ -319,13 +322,20 @@ body {
     margin: 0;
 }
 
-.exp-logo, .edu-logo {
+.exp-logo, .edu-logo , .exp-logo-2 {
     width: 48px;
     height: 48px;
     margin: 0;
     border-radius: 4px;
 }
 
+.exp-logo{
+    content: url(../Images/barclays.png);
+}
+
+.exp-logo-2{
+    content: url(../Images/morganstanley.jpg);
+}
 .profile-info h3 {
     font-size: 16px;
     margin-bottom: 4px;
@@ -574,6 +584,10 @@ body {
 .profile-cover-large {
     height: 200px;
     background: linear-gradient(135deg, #0a66c2, #004182);
+    background-image: url(../Images/luffy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .profile-header-info {
