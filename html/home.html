@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone - Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <span class="linkedin-logo">in</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="home.html" class="nav-item active">
+                    <span>🏠</span>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>👥</span>
+                    <span>My Network</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>💼</span>
+                    <span>Jobs</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>💬</span>
+                    <span>Messaging</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>🔔</span>
+                    <span>Notifications</span>
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <span>👤</span>
+                    <span>Me</span>
+                </a>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="left-sidebar">
+            <div class="profile-card">
+                <div class="profile-cover"></div>
+                <div class="profile-info">
+                    <div class="profile-avatar"></div>
+                    <h3 id="userFullName">User Name</h3>
+                    <p id="userTitle">Professional Title</p>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span>Profile viewers</span>
+                        <span class="stat-number">98</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Post impressions</span>
+                        <span class="stat-number">49</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h4>Groups</h4>
+                <p>Discover more groups</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h4>Events</h4>
+                <p>Discover events</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="post-composer">
+                <div class="composer-header">
+                    <div class="composer-avatar"></div>
+                    <input type="text" placeholder="Start a post">
+                </div>
+                <div class="composer-actions">
+                    <button class="composer-btn">📷 Photo</button>
+                    <button class="composer-btn">🎥 Video</button>
+                    <button class="composer-btn">📄 Write article</button>
+                </div>
+            </div>
+
+            <div class="feed">
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-avatar"></div>
+                        <div class="post-info">
+                            <h4>John Doe</h4>
+                            <p>Software Engineer at Tech Corp • 2h</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Excited to share my latest project! Building amazing things with cutting-edge technology. #coding #tech #innovation</p>
+                    </div>
+                    <div class="post-stats">
+                        <span>👍 15 reactions • 5 comments</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn">👍 Like</button>
+                        <button class="action-btn">💬 Comment</button>
+                        <button class="action-btn">🔄 Repost</button>
+                        <button class="action-btn">📤 Send</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-avatar"></div>
+                        <div class="post-info">
+                            <h4>Jane Smith</h4>
+                            <p>Product Manager at StartupCo • 4h</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Great insights from today's team meeting. Love working with such talented people! 🚀</p>
+                    </div>
+                    <div class="post-stats">
+                        <span>❤️ 23 reactions • 8 comments</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn">👍 Like</button>
+                        <button class="action-btn">💬 Comment</button>
+                        <button class="action-btn">🔄 Repost</button>
+                        <button class="action-btn">📤 Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <div class="news-section">
+                <h3>LinkedIn News</h3>
+                <div class="news-item">
+                    <h4>Tech trends in 2024</h4>
+                    <span>3h ago • 2,858 readers</span>
+                </div>
+                <div class="news-item">
+                    <h4>Remote work evolution</h4>
+                    <span>5h ago • 1,432 readers</span>
+                </div>
+                <div class="news-item">
+                    <h4>AI in the workplace</h4>
+                    <span>1d ago • 4,231 readers</span>
+                </div>
+            </div>
+
+            <div class="ad-section">
+                <p>Ad</p>
+                <div class="ad-content">
+                    <h4>Enhance your profile</h4>
+                    <p>Try Premium for ₹0</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Privacy & Terms</a>
+                    <a href="#">Ad Choices</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Business Services</a>
+                    <a href="#">Get the LinkedIn app</a>
+                    <a href="#">More</a>
+                </div>
+                <div class="footer-brand">
+                    <span class="linkedin-logo-small">in</span>
+                    <span>LinkedIn Corporation © 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

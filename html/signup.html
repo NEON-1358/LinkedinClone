@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone - Sign Up</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <div class="logo">
+                <span class="linkedin-logo">in</span>
+            </div>
+        </div>
+        
+        <div class="login-form-container">
+            <h1>Join LinkedIn</h1>
+            <p>Make the most of your professional life</p>
+            
+            <form id="signupForm" class="login-form">
+                <div class="form-group">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (6 or more characters)</label>
+                    <input type="password" id="password" name="password" minlength="6" required>
+                </div>
+                
+                <button type="submit" class="btn-primary">Join LinkedIn</button>
+                
+                <div class="signup-link">
+                    <p>Already have an account? <a href="index.html">Sign in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../js/auth.js"></script>
+</body>
+</html>

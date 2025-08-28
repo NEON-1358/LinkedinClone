@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone - Profile</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <span class="linkedin-logo">in</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="home.html" class="nav-item">
+                    <span>🏠</span>
+                    <span>Home</span>
+                </a>
+                <a href="connections.html" class="nav-item">
+                    <span>👥</span>
+                    <span>My Network</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>💼</span>
+                    <span>Jobs</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>💬</span>
+                    <span>Messaging</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>🔔</span>
+                    <span>Notifications</span>
+                </a>
+                <a href="profile.html" class="nav-item active">
+                    <span>👤</span>
+                    <span>Me</span>
+                </a>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="profile-main">
+            <div class="profile-header-card">
+                <div class="profile-cover-large"></div>
+                <div class="profile-header-info">
+                    <div class="profile-avatar-large"></div>
+                    <div class="profile-details">
+                        <h1 id="profileFullName">User Name</h1>
+                        <p id="profileTitle">Professional Title</p>
+                        <p id="profileLocation">Location</p>
+                        <p id="profileConnections">500+ connections</p>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="btn-primary">Open to</button>
+                        <button class="btn-secondary">Add profile section</button>
+                        <button class="btn-secondary">More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>About</h2>
+                <p>Passionate software engineer with 5+ years of experience in full-stack development. Specialized in React, Node.js, and cloud technologies. Always eager to learn new technologies and solve challenging problems.</p>
+            </div>
+
+            <div class="profile-section">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <div class="exp-logo"></div>
+                    <div class="exp-details">
+                        <h3>Senior Software Engineer</h3>
+                        <h4>Tech Corporation</h4>
+                        <p>Jan 2022 - Present • 2 yrs</p>
+                        <p>Leading development of scalable web applications using React and Node.js.</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="exp-logo"></div>
+                    <div class="exp-details">
+                        <h3>Software Engineer</h3>
+                        <h4>StartupCo</h4>
+                        <p>Jun 2020 - Dec 2021 • 1 yr 7 mos</p>
+                        <p>Developed and maintained multiple web applications and APIs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="edu-logo"></div>
+                    <div class="edu-details">
+                        <h3>Bachelor of Technology</h3>
+                        <h4>Computer Science Engineering</h4>
+                        <p>University Name • 2016 - 2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">React</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">AWS</div>
+                    <div class="skill-item">MongoDB</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-sidebar">
+            <div class="sidebar-section">
+                <h3>People also viewed</h3>
+                <div class="suggested-profile">
+                    <div class="suggested-avatar"></div>
+                    <div class="suggested-info">
+                        <h4>John Smith</h4>
+                        <p>Software Engineer at TechCorp</p>
+                    </div>
+                </div>
+                <div class="suggested-profile">
+                    <div class="suggested-avatar"></div>
+                    <div class="suggested-info">
+                        <h4>Jane Doe</h4>
+                        <p>Product Manager at StartupCo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>People you may know</h3>
+                <div class="suggested-profile">
+                    <div class="suggested-avatar"></div>
+                    <div class="suggested-info">
+                        <h4>Mike Johnson</h4>
+                        <p>Frontend Developer</p>
+                        <button class="connect-btn">Connect</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Privacy & Terms</a>
+                    <a href="#">Ad Choices</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Business Services</a>
+                    <a href="#">Get the LinkedIn app</a>
+                    <a href="#">More</a>
+                </div>
+                <div class="footer-brand">
+                    <span class="linkedin-logo-small">in</span>
+                    <span>LinkedIn Corporation © 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

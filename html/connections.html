@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone - My Network</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <span class="linkedin-logo">in</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="home.html" class="nav-item">
+                    <span>🏠</span>
+                    <span>Home</span>
+                </a>
+                <a href="connections.html" class="nav-item active">
+                    <span>👥</span>
+                    <span>My Network</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>💼</span>
+                    <span>Jobs</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>💬</span>
+                    <span>Messaging</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>🔔</span>
+                    <span>Notifications</span>
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <span>👤</span>
+                    <span>Me</span>
+                </a>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="network-sidebar">
+            <div class="network-stats">
+                <h3>Manage my network</h3>
+                <div class="stat-item">
+                    <span>Connections</span>
+                    <span class="stat-number">512</span>
+                </div>
+                <div class="stat-item">
+                    <span>Followers</span>
+                    <span class="stat-number">1,247</span>
+                </div>
+                <div class="stat-item">
+                    <span>Following</span>
+                    <span class="stat-number">389</span>
+                </div>
+            </div>
+
+            <div class="network-menu">
+                <a href="#" class="menu-item active">People you may know</a>
+                <a href="#" class="menu-item">Grow your network</a>
+                <a href="#" class="menu-item">All connections</a>
+            </div>
+        </div>
+
+        <div class="network-main">
+            <div class="network-header">
+                <h2>People you may know</h2>
+                <p>Based on your profile and activity</p>
+            </div>
+
+            <div class="suggestions-grid">
+                <div class="suggestion-card">
+                    <div class="suggestion-avatar"></div>
+                    <h3>Sarah Johnson</h3>
+                    <p>UX Designer at DesignCorp</p>
+                    <p class="mutual-connections">3 mutual connections</p>
+                    <div class="suggestion-actions">
+                        <button class="btn-primary">Connect</button>
+                        <button class="btn-secondary">✕</button>
+                    </div>
+                </div>
+
+                <div class="suggestion-card">
+                    <div class="suggestion-avatar"></div>
+                    <h3>Michael Chen</h3>
+                    <p>Data Scientist at AI Corp</p>
+                    <p class="mutual-connections">5 mutual connections</p>
+                    <div class="suggestion-actions">
+                        <button class="btn-primary">Connect</button>
+                        <button class="btn-secondary">✕</button>
+                    </div>
+                </div>
+
+                <div class="suggestion-card">
+                    <div class="suggestion-avatar"></div>
+                    <h3>Emily Rodriguez</h3>
+                    <p>Product Manager at TechStart</p>
+                    <p class="mutual-connections">2 mutual connections</p>
+                    <div class="suggestion-actions">
+                        <button class="btn-primary">Connect</button>
+                        <button class="btn-secondary">✕</button>
+                    </div>
+                </div>
+
+                <div class="suggestion-card">
+                    <div class="suggestion-avatar"></div>
+                    <h3>David Wilson</h3>
+                    <p>Software Engineer at DevCorp</p>
+                    <p class="mutual-connections">8 mutual connections</p>
+                    <div class="suggestion-actions">
+                        <button class="btn-primary">Connect</button>
+                        <button class="btn-secondary">✕</button>
+                    </div>
+                </div>
+
+                <div class="suggestion-card">
+                    <div class="suggestion-avatar"></div>
+                    <h3>Lisa Thompson</h3>
+                    <p>Marketing Director at BrandCo</p>
+                    <p class="mutual-connections">1 mutual connection</p>
+                    <div class="suggestion-actions">
+                        <button class="btn-primary">Connect</button>
+                        <button class="btn-secondary">✕</button>
+                    </div>
+                </div>
+
+                <div class="suggestion-card">
+                    <div class="suggestion-avatar"></div>
+                    <h3>James Martinez</h3>
+                    <p>Full Stack Developer at WebCorp</p>
+                    <p class="mutual-connections">6 mutual connections</p>
+                    <div class="suggestion-actions">
+                        <button class="btn-primary">Connect</button>
+                        <button class="btn-secondary">✕</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="invitations-section">
+                <h3>Invitations</h3>
+                <div class="invitation-item">
+                    <div class="invitation-avatar"></div>
+                    <div class="invitation-info">
+                        <h4>Alex Kumar</h4>
+                        <p>wants to connect</p>
+                        <p class="invitation-message">"I'd like to add you to my professional network."</p>
+                    </div>
+                    <div class="invitation-actions">
+                        <button class="btn-primary">Accept</button>
+                        <button class="btn-secondary">Ignore</button>
+                    </div>
+                </div>
+
+                <div class="invitation-item">
+                    <div class="invitation-avatar"></div>
+                    <div class="invitation-info">
+                        <h4>Rachel Green</h4>
+                        <p>wants to connect</p>
+                        <p class="invitation-message">"Let's connect and share professional insights!"</p>
+                    </div>
+                    <div class="invitation-actions">
+                        <button class="btn-primary">Accept</button>
+                        <button class="btn-secondary">Ignore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="network-sidebar-right">
+            <div class="sidebar-section">
+                <h3>Add personal contacts</h3>
+                <p>We'll periodically import and store your contacts to help you and others connect.</p>
+                <button class="btn-outline">Continue</button>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Privacy & Terms</a>
+                    <a href="#">Ad Choices</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Business Services</a>
+                    <a href="#">Get the LinkedIn app</a>
+                    <a href="#">More</a>
+                </div>
+                <div class="footer-brand">
+                    <span class="linkedin-logo-small">in</span>
+                    <span>LinkedIn Corporation © 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
