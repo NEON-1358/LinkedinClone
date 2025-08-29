@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f3f2ef;
+    color: #000000e6;
+    line-height: 1.4;
+}
+
+.logo {
+    max-width: 1200px;
+    margin: 0 ;
+    padding: 0 20px;
+    margin-right: 0px;
+}
+
+.linkedin-logo {
+    background-color: #0a66c2;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px 8px;
+    border-radius: 4px;
+}
+
