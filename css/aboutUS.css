@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: #f4f8fb;
+    color: #232323;
+}
+.sticky-header {
+    position: sticky;
+    top: 1px;
+    background: #fff;
+    z-index: 100;
+    padding: 1px;
+}
+
+.login-container {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.login-header {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.logo {
+    max-width: 1200px;
+    margin: 0 ;
+    padding: 0 20px;
+    margin-right: 0px;
+}
+
+.linkedin-logo {
+    background-color: #0a66c2;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px 8px;
+    border-radius: 4px;
+}
+#imgh {
+    width: 96px ;
+    height: 96px;
+    margin: 0 auto 18px auto;
+    display: block;
+}
+
+.header-underline {
+    width: 1000vw;
+    height: 2.5px;
+    background: #e3e7e9; /* LinkedIn blue underline */
+    margin-bottom: -4px;
+}
+
+/* Hero section with background */
+.hero-section {
+    position: relative;
+    min-height: 820px;
+    background: white ;
+    background-image: url('https://content.linkedin.com/content/dam/me/about/aboutus-hero-banner-dsk.jpg.original.jpg') top center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, #eaf5fb 70%, rgba(234,245,251,0) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 130px;  /* to create 130px gap from underline */
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.about-logo {
+    margin-bottom: 24px;
+    width: 62px;
+    height: 62px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin: 0 0 18px 0;
+    color: #222;
+}
+
+.subtitle {
+    font-size: 1.22rem;
+    color: #555;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.info-block {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: /* Roman */ Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */ Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */ Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */ Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */ Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */ Heiti SC, Microsoft Yahei, Segoe UI;;
+}
+
+.info-block h2 {
+    font-size: 1.32rem;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+    color: #333;
+}
+
+.info-block p {
+    font-size: 1.09rem;
+    color: #444;
+    margin: 0;
+}
+
+/* Info Section */
+.info-section {
+    background: #eaf5fb;
+    margin-top: 10px;
+    padding: 52px 0 41px 0;
+    border-radius: 0 0 20px 20px;
+    width: 100vw;
+}
+
+.info-container {
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.info-container h2 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+    text-align: left;
+    color: #232323;
+    letter-spacing: 0.02em;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 36px;
+    align-items: flex-start;
+}
+
+.card {
+    background: #eaf5fb;
+    border-radius: 17px;
+    width: 265px;
+    padding: 22px 16px 12px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    text-align: center;
+}
+
+.card img {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 14px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.card-title {
+    font-size: 1.16rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.03rem;
+    color: #666;
+    margin-bottom: 11px;
+}
+
+.card a {
+    color: #1877B2;
+    font-size: 1.02rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 7px;
+}
+.card-row:hover .card {
+    opacity: 0.25;
+    transition: opacity 0.3s ease;
+}
+
+.card-row .card:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
+/* Footer */
+footer {
+    /* background: #f8f3f4dc; */
+    background: white;
+    padding: 6px 0 27px 0;
+    text-align: center;
+    width: 100vw;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    font-size: 1.03rem;
+    font-weight: 500;
+    color: #716f6f;
+    padding: 20px 0 7px 0;
+}
+
+.footer-links span {
+    cursor: pointer;
+    transition: color 0.21s;
+}
+
+.footer-links span:hover {
+    color: #158dd7;
+}
+
+.footer-bottom {
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: #666;
+    font-size: 1.09rem;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-right: 4px;
+    width: 42px;
+}
+
