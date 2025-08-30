@@ -363,7 +363,7 @@ body {
     margin: -32px auto 12px;
     border: 2px solid white;
 }
-.profile-avatar-large , .post-avatar-1, .post-avatar-2, .composer-avatar, 
+.profile-avatar-large , .post-avatar-1, .post-avatar-2, .post-avatar-3, .composer-avatar, 
 .suggested-avatar-1, .suggested-avatar-2, .suggested-avatar-3,
 .suggestion-avatar-1, .suggestion-avatar-5, .suggestion-avatar-6, .suggestion-avatar-7, 
 .suggestion-avatar-8, .suggestion-avatar-9,  .invitation-avatar-1, .invitation-avatar-2, .exp-logo, .edu-logo {  
@@ -380,7 +380,9 @@ body {
 .post-avatar-2, .suggested-avatar-2 {
     content: url(../Images/download\ \(1\).png);
 }
-
+.post-avatar-3 {
+    content: url(../Images/images\ \(3\).jpeg);
+}
 .suggested-avatar-3 {
     content: url(../Images/download\ \(2\).jpeg);
 }
@@ -477,7 +479,7 @@ body {
     content: url(../Images/download.jpeg);
 }
 
-.post-avatar-1, .post-avatar-2, .composer-avatar, .suggested-avatar-1,
+.post-avatar-1, .post-avatar-2, .post-avatar-3, .composer-avatar, .suggested-avatar-1,
  .suggested-avatar-2, .suggested-avatar-3{
     width: 48px;
     height: 48px;
