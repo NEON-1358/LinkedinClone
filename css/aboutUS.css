@@ -189,15 +189,7 @@ h1 {
     text-decoration: none;
     margin-top: 7px;
 }
-.card-row:hover .card {
-    opacity: 0.25;
-    transition: opacity 0.3s ease;
-}
 
-.card-row .card:hover {
-    opacity: 1 !important;
-    transition: opacity 0.3s ease;
-}
 
 /* Footer */
 footer {
@@ -242,4 +234,3 @@ footer {
     margin-right: 4px;
     width: 42px;
 }
-
