@@ -15,7 +15,6 @@ body {
 .login-container {
     min-height: 100vh;
     background-color: #ffffff;
-    position: absolute;
 }
 
 .login-header {
@@ -75,7 +74,7 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    padding-top: 120px;  /* to create 130px gap from underline */
+    padding-top: 130px;  /* to create 130px gap from underline */
     max-width: 950px;
     margin: 0 auto;
 }
@@ -83,7 +82,7 @@ body {
 .about-logo {
     margin-bottom: 24px;
     width: 62px;
-    height: 82px;
+    height: 62px;
 }
 
 h1 {
@@ -235,4 +234,3 @@ footer {
     margin-right: 4px;
     width: 42px;
 }
-
