@@ -158,6 +158,12 @@ class App {
         // Footer links
         const footerLinks = document.querySelectorAll('.footer-links a');
         footerLinks.forEach(link => {
+            // Don't prevent navigation for links that actually have working pages
+            if (link.textContent.trim() === 'About' && link.href.includes('aboutUS.html')) {
+                // Allow normal navigation for the About page
+                return;
+            }
+            
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 alert(`${this.textContent} page coming soon!`);

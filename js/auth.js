@@ -9,7 +9,7 @@ class Auth {
             localStorage.setItem(this.KEY_USERS, JSON.stringify([]));
         }
 
-        // Check if user is logged in and redirect accordingly
+        // Check if user is logged in and redirect accordingly 
         this.checkAuthStatus();
     }
 
@@ -33,7 +33,7 @@ class Auth {
             return { success: false, message: 'User already exists with this email' };
         }
 
-        // Create new user
+        // Create new user to page
         const newUser = {
             id: Date.now().toString(),
             firstName: userData.firstName,
