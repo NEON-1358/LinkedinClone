@@ -14,7 +14,7 @@ Currently, it includes:
 - Login & Signup pages  
 - Profile and Feed (UI in progress)  
 
-The purpose is to **understand frontend development, responsive UI/UX design, and collaborative workflows**.
+The purpose is to **understand frontend development, responsive UI/UX design, and collaborative workflows and working as a team**.
 
 ---
 
