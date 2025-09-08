@@ -1,6 +1,6 @@
 🔗 LinkedIn Clone
 
-A collaborative project built to replicate the **UI and core design** of [LinkedIn](https://www.linkedin.com/), using only **HTML, CSS, and JavaScript** (till now).  
+A collaborative project built to replicate the **UI and core design** of [LinkedIn](https://www.linkedin.com/), using only **HTML, CSS, and JavaScript** ( now).  
 This project is part of our learning journey to improve frontend development skills and teamwork.  
 Further tech stack will be implemented in future iterations.
 
