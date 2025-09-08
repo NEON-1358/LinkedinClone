@@ -1,6 +1,6 @@
 🔗 LinkedIn Clone
 
-A collaborative project built to replicate the **UI and core design** of [LinkedIn](https://www.linkedin.com/), using only **HTML, CSS, and JavaScript** (till now).  
+A collaborative project built to replicate the **UI and core design** of [LinkedIn](https://www.linkedin.com/), using only **HTML, CSS, and JavaScript** (as of now).  
 This project is part of our learning journey to improve frontend development skills and teamwork.  
 Further tech stack will be implemented in future iterations.
 
@@ -14,14 +14,14 @@ Currently, it includes:
 - Login & Signup pages  
 - Profile and Feed (UI in progress)  
 
-The purpose is to **understand frontend development, responsive UI/UX design, and collaborative workflows**.
+The purpose is to **understand frontend development, responsive UI/UX design, and collaborative workflows and working as a team**.
 
 ---
 
 ## 🛠️ Tech Stack (Current)
 - **HTML5** – Page structure  
 - **CSS3** – Styling and responsiveness  
-- **JavaScript (Vanilla)** – Interactivity  
+- **JavaScript** – Interactivity  
 
 *(Further technologies will be added as the project evolves.)*
 
