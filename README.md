@@ -21,7 +21,7 @@ The purpose is to **understand frontend development, responsive UI/UX design, an
 ## 🛠️ Tech Stack (Current)
 - **HTML5** – Page structure  
 - **CSS3** – Styling and responsiveness  
-- **JavaScript (Vanilla)** – Interactivity  
+- **JavaScript** – Interactivity  
 
 *(Further technologies will be added as the project evolves.)*
 
