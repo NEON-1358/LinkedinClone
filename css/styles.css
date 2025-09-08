@@ -11,6 +11,136 @@ body {
     line-height: 1.4;
 }
 
+/* Login/Signup Styles */
+.login-container {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.login-header {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    max-width: 1200px;
+    margin: 0 ;
+    padding: 0 20px;
+    margin-right: 0px;
+}
+
+.linkedin-logo {
+    background-color: #0a66c2;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px 8px;
+    border-radius: 4px;
+}
+
+.login-form-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.login-form-container h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.login-form-container p {
+    color: #666666;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0a66c2;
+    border-width: 2px;
+}
+.accept {
+  background-color: #0a66c2;
+  color: white;
+}
+
+.reject {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.btn-primary {
+    width: 50%;
+    background-color: #0a66c2;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #004182;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #0a66c2;
+    border: 1px solid #0a66c2;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #e7f3ff;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #0a66c2;
+    border: 1px solid #0a66c2;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-outline:hover {
+    background-color: #e7f3ff;
+}
+
 .icon svg {
     width: 25px;
     height: 25px;
@@ -600,493 +730,6 @@ body {
     display: flex;
     align-items: center;
     color: #666666;
-}
-
-/* Profile Page Styles */
-.profile-main {
-    grid-column: 1 / -2;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.profile-sidebar {
-    grid-column: -2 / -1;
-}
-
-.profile-header-card {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.profile-cover-large {
-    height: 200px;
-    background: linear-gradient(135deg, #0a66c2, #004182);
-    background-image: url(../Images/luffy.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.profile-header-info {
-    padding: 24px;
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
-}
-
-.profile-details h1 {
-    font-size: 28px;
-    margin-bottom: 8px;
-}
-
-.profile-details p {
-    color: #666666;
-    margin-bottom: 4px;
-}
-
-.profile-actions {
-    margin-left: auto;
-    display: flex;
-    gap: 8px;
-}
-
-.profile-section {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 24px;
-}
-
-.profile-section h2 {
-    font-size: 20px;
-    margin-bottom: 16px;
-}
-
-.experience-item, .education-item {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 24px;
-}
-
-.exp-details h3, .edu-details h3 {
-    font-size: 16px;
-    margin-bottom: 4px;
-}
-
-.exp-details h4, .edu-details h4 {
-    font-size: 14px;
-    color: #666666;
-    margin-bottom: 4px;
-}
-
-.exp-details p, .edu-details p {
-    font-size: 14px;
-    color: #666666;
-    margin-bottom: 4px;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 12px;
-}
-
-.skill-item {
-    background-color: #f3f2ef;
-    padding: 8px 12px;
-    border-radius: 16px;
-    font-size: 14px;
-    text-align: center;
-}
-
-.suggested-profile {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.suggested-info h4 {
-    font-size: 14px;
-    margin-bottom: 4px;
-}
-
-.suggested-info p {
-    font-size: 12px;
-    color: #666666;
-}
-
-.connect-btn {
-    background-color: #0a66c2;
-    color: white;
-    border: none;
-    padding: 4px 12px;
-    border-radius: 16px;
-    font-size: 12px;
-    cursor: pointer;
-    margin-top: 8px;
-}
-
-/* Connections Page Styles */
-.network-sidebar {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 24px;
-    height: fit-content;
-}
-
-.network-sidebar-right {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.network-stats h3 {
-    margin-bottom: 16px;
-    font-size: 16px;
-}
-
-.network-menu {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-item {
-    padding: 12px 0;
-    color: #666666;
-    text-decoration: none;
-    font-size: 14px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.menu-item.active, .menu-item:hover {
-    color: #0a66c2;
-    font-weight: 600;
-}
-
-.network-main {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 24px;
-}
-
-.network-header h2 {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.network-header p {
-    color: #666666;
-    margin-bottom: 24px;
-}
-
-.suggestions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
-    margin-bottom: 32px;
-}
-
-.suggestion-card {
-  display: flex;
-  align-items: center;     /* vertical center */
-  padding: 10px;
-  gap: 12px;               /* space between avatar and text */
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-}
-
-.suggestion-card h3 {
-    font-size: 16px;
-    margin: 12px 0 4px;
-}
-
-.suggestion-card p {
-    font-size: 14px;
-    color: #666666;
-    margin-bottom: 4px;
-}
-
-.mutual-connections {
-    font-size: 12px;
-    color: #666666;
-    margin-bottom: 16px;
-}
-
-.suggestion-actions {
-  display: flex;
-  gap: 10px;       
-  margin-top: 10px;
-}
-
-.suggestion-actions button {
-  width: 40px;           
-  height: 40px;
-  border-radius: 50%;     
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  display: flex;         
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.2s;
-}
-
-.invitations-section h3 {
-    font-size: 18px;
-    margin-bottom: 16px;
-}
-
-.invitation-item {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    padding: 16px 0;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-
-
-.invitation-info {
-    flex: 1;
-}
-
-.invitation-info h4 {
-    font-size: 16px;
-    margin-bottom: 4px;
-}
-
-.invitation-info p {
-    font-size: 14px;
-    color: #666666;
-    margin-bottom: 4px;
-}
-
-.invitation-message {
-    font-style: italic;
-}
-
-.invitation-actions {
-    display: flex;
-    gap: 8px;
-}
-
-/* Profile Activity/Posts Section */
-.activity-section {
-    padding: 0 !important;
-}
-
-.activity-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 24px 24px 16px 24px;
-}
-
-.activity-title h2 {
-    margin-bottom: 4px;
-}
-
-.follower-count {
-    color: #0a66c2;
-    font-size: 14px;
-    margin: 0;
-}
-
-.create-post-btn {
-    background: transparent;
-    color: #0a66c2;
-    border: 1px solid #0a66c2;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.create-post-btn:hover {
-    background-color: #e7f3ff;
-}
-
-.activity-tabs {
-    display: flex;
-    padding: 0 24px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.activity-tab {
-    background: none;
-    border: none;
-    padding: 12px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #666666;
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s;
-}
-
-.activity-tab.active {
-    color: #0a66c2;
-    border-bottom-color: #0a66c2;
-}
-
-.activity-tab:hover {
-    color: #0a66c2;
-}
-
-.posts-container {
-    padding: 0;
-}
-
-.profile-post {
-    padding: 16px 24px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.profile-post:last-child {
-    border-bottom: none;
-}
-
-.profile-post .post-header {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 12px;
-}
-
-.profile-post .post-avatar {
-    content: url(../Images/download.jpeg);
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.profile-post .post-info {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.post-author h4 {
-    font-size: 14px;
-    margin: 0 0 2px 0;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.verified-badge {
-    color: #0a66c2;
-    font-size: 12px;
-}
-
-.post-time {
-    color: #666666;
-    font-weight: normal;
-}
-
-.post-author p {
-    font-size: 12px;
-    color: #666666;
-    margin: 0 0 2px 0;
-}
-
-.post-timestamp {
-    font-size: 12px;
-    color: #666666;
-}
-
-.post-menu {
-    background: none;
-    border: none;
-    color: #666666;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 4px;
-}
-
-.profile-post .post-content {
-    margin-bottom: 12px;
-}
-
-.profile-post .post-content p {
-    font-size: 14px;
-    line-height: 1.4;
-    margin-bottom: 12px;
-}
-
-.profile-post .post-content a {
-    color: #0a66c2;
-    text-decoration: none;
-}
-
-.profile-post .post-content a:hover {
-    text-decoration: underline;
-}
-
-.post-image {
-    margin-bottom: 8px;
-}
-
-.post-image img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
-}
-
-.post-caption {
-    font-size: 14px;
-    color: #666666;
-    margin: 8px 0 0 0;
-    font-style: italic;
-}
-
-.profile-post .post-stats {
-    font-size: 12px;
-    color: #666666;
-    margin-bottom: 8px;
-    padding-bottom: 8px;
-}
-
-.profile-post .post-actions {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #e0e0e0;
-    padding-top: 8px;
-}
-
-.profile-post .action-btn {
-    background: none;
-    border: none;
-    color: #666666;
-    font-size: 14px;
-    cursor: pointer;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.profile-post .action-btn:hover {
-    background-color: #f3f2ef;
-}
-
-.profile-post .action-btn span {
-    font-size: 16px;
 }
 
 /* Responsive Design */

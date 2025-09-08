@@ -1,33 +1,3 @@
-.navbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 10px;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 1px;
-}
-
-.logo {
-    max-width: 1200px;
-    margin: 0 ;
-    padding: 0 20px;
-    margin-right: 0px;
-}
-
 .linkedin-logo {
     background-color: #0a66c2;
     color: white;
