@@ -731,7 +731,6 @@ body {
     align-items: center;
     color: #666666;
 }
-
 /* Responsive Design */
 @media (max-width: 1024px) {
     .main-container {
