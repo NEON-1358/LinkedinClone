@@ -7,34 +7,64 @@
     <title>LinkedIn Clone - My Network</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/connections.css">
+    <link rel="stylesheet" href="../css/search.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-left">
-                <div class="logo">
-                    <span class="linkedin-logo">in</span>
-                </div>
-                <div class="search-box">
-                    <input type="text" placeholder="Search">
+    <div class="nav-container">
+        <div class="nav-left">
+            <div class="logo">
+                <span class="linkedin-logo">in</span>
+            </div>
+            <div class="search-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#666" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 
+                    3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 
+                    1.656a5.5 5.5 0 1 1 0-11 
+                    5.5 5.5 0 0 1 0 11z"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search" readonly>
+            </div>
+
+            <div id="searchDropdown" class="search-dropdown hidden">
+                <input type="text" id="activeSearch" placeholder="Search for people, jobs, posts..." autofocus>
+
+                <div class="recent-searches">
+                    <h4>Recent Searches</h4>
+                    <ul>
+                        <li>
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                            <span>Rohit Sharma</span>
+                        </li>
+                        <li>
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+                            <span>Priya Verma</span>
+                        </li>
+                        <li>
+                            <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="">
+                            <span>Aditya Mehra</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="nav-right">
-                <a href="home.html" class="nav-item active">
-                    <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
-                             stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" 
-                                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 
-                                     1.591 0L21.75 12M4.5 9.75v10.125c0 
-                                     .621.504 1.125 1.125 1.125H9.75v-4.875
-                                     c0-.621.504-1.125 1.125-1.125h2.25c.621 
-                                     0 1.125.504 1.125 1.125V21h4.125c.621 0 
-                                     1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                        </svg>
-                    </span>
-                    <span>Home</span>
-                </a>
+        </div>
+
+        <div class="nav-right">
+            <a href="home.html" class="nav-item active">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                         stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 
+                                 1.591 0L21.75 12M4.5 9.75v10.125c0 
+                                 .621.504 1.125 1.125 1.125H9.75v-4.875
+                                 c0-.621.504-1.125 1.125-1.125h2.25c.621 
+                                 0 1.125.504 1.125 1.125V21h4.125c.621 0 
+                                 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </span>
+                <span>Home</span>
+            </a>
                 
                 <a href="connections.html" class="nav-item">
                     <span class="icon2">
@@ -254,6 +284,7 @@
 
     <script src="../js/auth.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 
 </html>

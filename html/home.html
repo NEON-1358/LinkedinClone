@@ -7,6 +7,7 @@
     <title>LinkedIn Clone - Home</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/search.css">
 
 </head>
 
@@ -17,9 +18,42 @@
                 <div class="logo">
                     <span class="linkedin-logo">in</span>
                 </div>
-                <div class="search-box">
-                    <input type="text" placeholder="Search">
-                </div>
+               <div class="search-container">
+  <div class="search-bar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#666" viewBox="0 0 16 16">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 
+      3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 
+      1.656a5.5 5.5 0 1 1 0-11 
+      5.5 5.5 0 0 1 0 11z"/>
+    </svg>
+    <input type="text" id="searchInput" placeholder="Search" readonly>
+  </div>
+
+  <!-- ⬇️ Add this dropdown box right below -->
+  <div id="searchDropdown" class="search-dropdown hidden">
+    <input type="text" id="activeSearch" placeholder="Search for people, jobs, posts..." autofocus>
+
+    <div class="recent-searches">
+      <h4>Recent Searches</h4>
+      <ul>
+        <li>
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+          <span>Rohit Sharma</span>
+        </li>
+        <li>
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+          <span>Priya Verma</span>
+        </li>
+        <li>
+          <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="">
+          <span>Aditya Mehra</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
             </div>
             <div class="nav-right">
                 <a href="home.html" class="nav-item active">
@@ -406,6 +440,7 @@
 
     <script src="../js/auth.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 
 </html>
